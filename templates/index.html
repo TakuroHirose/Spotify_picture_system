@@ -1,12 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
-    <title>HELLO</title>
-    <link rel="stylesheet" href="/static/system.css"
+    <title>こんな感じ（仮）</title>
+    <style>
+        /* ヘッダー */
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+        }
+
+        /* ナビゲーション */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* ナビゲーションのリンク */
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        /* メインコンテンツ */
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* セクションの見出し */
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+        }
+
+        /* セクションのテキスト */
+        p {
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* フッター */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
 </head>
 <body>
-    <p class="hello">Sayhello</p>
-    <p>{{a}}</p>
+    <!-- ヘッダー -->
+    <header>
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+        </nav>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <main>
+        <section>
+            <h2>Spotifyとの連携によるジャケット画像の一覧化</h2>
+            <p>セクションのテキスト。ここには興味深い情報が記載されます。</p>
+            <p>もうひとつのセクションのテキスト。ここにはさらに興味深い情報が記載されます。</p>
+        </section>
+
+        <section>
+            <h2>実際の使用例</h2>
+            <p>ここには別の興味深い情報が記載されます。</p>
+        </section>
+    </main>
+
+    <!-- フッター -->
+    <footer>
+        &copy; 2023 ChatGPT, HIROSE and NISHIO
+    </footer>
 </body>
 </html>
