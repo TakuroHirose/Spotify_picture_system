@@ -2,7 +2,8 @@ import json
 from flask import Flask, request, redirect, g, render_template
 import requests
 from urllib.parse import quote
-import json
+import os
+dir_path = os.path.dirname(os.path.realpath(__file__))
 
 # Authentication Steps, paramaters, and responses are defined at https://developer.spotify.com/web-api/authorization-guide/
 # Visit this url to see all the steps, parameters, and expected response.
@@ -11,7 +12,7 @@ import json
 app = Flask(__name__)
 
 #  Client Keys
-with open('C:\\Users\\kousuke05\\Project\\config.json') as f:
+with open(os.path.join(dir_path, 'config.json')) as f:
     config = json.load(f)
 CLIENT_ID = config['CLIENT_ID']
 CLIENT_SECRET = config['CLIENT_SECRET']
